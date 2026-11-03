@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NOIR Modern Dining | Dinner in DHA, Karachi (demo site)</title>
+<meta name="description" content="Demo website for NOIR, a fictional restaurant in DHA, Karachi. See the menu and hours, then book a table.">
+<meta name="theme-color" content="#0d0c0b">
+<meta property="og:title" content="NOIR Modern Dining (demo site)">
+<meta property="og:description" content="Steak and seafood dinners in DHA, Karachi. Fictional restaurant, demonstration website.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1200&q=70">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://images.unsplash.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Libre+Franklin:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%230d0c0b'/%3E%3Ctext x='32' y='44' font-family='Georgia,serif' font-size='38' font-weight='700' text-anchor='middle' fill='%23e0583a'%3EN%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<!-- ================= NAVIGATION ================= -->
+<header class="site-header" id="header">
+  <div class="nav-wrap">
+    <a href="#home" class="logo" aria-label="NOIR Modern Dining, home">NOIR<span>Modern Dining</span></a>
+
+    <nav class="nav" id="nav" aria-label="Main navigation">
+      <a href="#home">Home</a>
+      <a href="#menu">Menu</a>
+      <a href="#story">About</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#contact">Contact</a>
+      <a href="#reserve" class="btn btn-accent nav-cta">Book a table</a>
+    </nav>
+
+    <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav">
+      <span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- ================= HERO =================
+     Photo is a stock steak shot: REPLACE with a real photo of a NOIR plate. -->
+<section class="hero" id="home" aria-labelledby="hero-title">
+  <img class="hero-img" src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1800&q=75"
+       alt="Sliced steak on a dark board with herbs" fetchpriority="high" decoding="async">
+  <div class="hero-shade" aria-hidden="true"></div>
+  <div class="hero-content">
+    <p class="eyebrow anim" style="--d:.1s">Dinner only · DHA Phase 8, Karachi</p>
+    <h1 id="hero-title" class="anim" style="--d:.25s">Steak and seafood dinners<br><em>in DHA, Karachi.</em></h1>
+    <p class="lead anim" style="--d:.45s">Dinner service starts at 6 PM. Look through the menu, then book a table.</p>
+    <div class="hero-cta anim" style="--d:.65s">
+      <a href="#menu" class="btn btn-outline">See the menu</a>
+      <a href="#reserve" class="btn btn-accent">Book a table</a>
+    </div>
+  </div>
+  <a href="#story" class="scroll-hint" aria-label="Scroll to About"><span></span></a>
+</section>
+
+<!-- ================= ABOUT =================
+     Story details below are made-up sample content for the demo. -->
+<section class="section story" id="story" aria-labelledby="story-title">
+  <div class="container story-grid">
+    <div class="story-images reveal">
+      <!-- REPLACE both photos with the actual kitchen team and dining room -->
+      <img class="img-a" loading="lazy" decoding="async" width="700" height="900"
+           src="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?auto=format&fit=crop&w=700&q=70"
+           alt="Placeholder photo of a chef plating a dish">
+      <img class="img-b" loading="lazy" decoding="async" width="500" height="600"
+           src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=500&q=70"
+           alt="Placeholder photo of a plated course">
+    </div>
+    <div class="story-text reveal">
+      <p class="eyebrow">About NOIR</p>
+      <h2 id="story-title">Who is cooking<br><em>your dinner</em></h2>
+      <!-- SAMPLE DETAILS for the demo. Swap in the real owner's story, names and numbers. -->
+      <p>NOIR opened in 2021 on a quiet street in DHA Phase 8. Chef Faisal Rehman had spent ten years cooking in Lahore and Dubai, and wanted a dinner-only place with a short menu and a busy grill.</p>
+      <p>The beef comes from a halal farm near Hyderabad. Salmon and scallops arrive twice a week, and the menu changes when the season does.</p>
+      <dl class="facts">
+        <div><dt>Opened</dt><dd>2021</dd></div>
+        <div><dt>Kitchen led by</dt><dd>Chef Faisal Rehman</dd></div>
+        <div><dt>Seats</dt><dd>48</dd></div>
+      </dl>
+      <a href="#reserve" class="link-arrow">Book a table</a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= MENU =================
+     Text-first on purpose: the stock photos did not match the dishes.
+     Dishes and prices are sample content: confirm with the restaurant. -->
+<section class="section menu" id="menu" aria-labelledby="menu-title">
+  <div class="container">
+    <header class="section-head reveal">
+      <p class="eyebrow">Menu</p>
+      <h2 id="menu-title">Tonight's <em>menu</em></h2>
+    </header>
+
+    <div class="filters reveal" role="group" aria-label="Filter menu by category" id="filters">
+      <button class="filter active" data-filter="all" aria-pressed="true">All</button>
+      <button class="filter" data-filter="starters" aria-pressed="false">Starters</button>
+      <button class="filter" data-filter="main" aria-pressed="false">Main Course</button>
+      <button class="filter" data-filter="desserts" aria-pressed="false">Desserts</button>
+      <button class="filter" data-filter="beverages" aria-pressed="false">Beverages</button>
+    </div>
+
+    <div class="menu-layout">
+      <figure class="menu-photo reveal">
+        <!-- REPLACE with a photo of the real striploin -->
+        <img loading="lazy" decoding="async" width="700" height="875"
+             src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=700&q=70"
+             alt="Sliced steak on a dark board">
+      </figure>
+
+      <ul class="dish-list" id="dishGrid">
+        <li class="dish reveal" data-cat="starters">
+          <span class="dish-cat">Starter</span>
+          <div class="dish-top"><h3>Seared Scallops</h3><span class="leader" aria-hidden="true"></span><span class="price">PKR 3,200</span></div>
+          <p>Cauliflower purée, charred lemon, coriander oil.</p>
+        </li>
+        <li class="dish reveal" data-cat="starters">
+          <span class="dish-cat">Starter</span>
+          <div class="dish-top"><h3>Smoked Beef Tartare</h3><span class="leader" aria-hidden="true"></span><span class="price">PKR 2,800</span></div>
+          <p>Raw beef fillet, smoked yoghurt, pickled chilli, sourdough.</p>
+        </li>
+        <li class="dish reveal" data-cat="main">
+          <span class="dish-cat">Main Course</span>
+          <div class="dish-top"><h3>Wagyu Striploin</h3><span class="leader" aria-hidden="true"></span><span class="price">PKR 9,800</span></div>
+          <p>Bone-marrow jus, roasted garlic, truffle potatoes.</p>
+        </li>
+        <li class="dish reveal" data-cat="main">
+          <span class="dish-cat">Main Course</span>
+          <div class="dish-top"><h3>Saffron Butter Salmon</h3><span class="leader" aria-hidden="true"></span><span class="price">PKR 5,400</span></div>
+          <p>Pan-fried fillet, saffron butter sauce, charred greens.</p>
+        </li>
+        <li class="dish reveal" data-cat="desserts">
+          <span class="dish-cat">Dessert</span>
+          <div class="dish-top"><h3>Dark Chocolate Ganache</h3><span class="leader" aria-hidden="true"></span><span class="price">PKR 1,900</span></div>
+          <p>Cardamom cream, salted caramel.</p>
+        </li>
+        <li class="dish reveal" data-cat="beverages">
+          <span class="dish-cat">Beverage</span>
+          <div class="dish-top"><h3>Rose and Citrus Spritz</h3><span class="leader" aria-hidden="true"></span><span class="price">PKR 1,100</span></div>
+          <p>No alcohol. Rose syrup, blood orange, tonic, mint.</p>
+        </li>
+      </ul>
+    </div>
+    <p class="menu-note reveal">Tell us about any allergies when you book or order. <a class="link-arrow" href="#reserve">Book a table</a></p>
+  </div>
+</section>
+
+<!-- ================= GALLERY =================
+     Uneven mosaic on purpose. All six photos are stock: replace them. -->
+<section class="section gallery" id="gallery" aria-labelledby="gallery-title">
+  <div class="container">
+    <header class="section-head reveal">
+      <p class="eyebrow">Gallery</p>
+      <h2 id="gallery-title">Photos</h2>
+    </header>
+    <div class="gallery-grid" id="galleryGrid">
+      <button class="g-item" data-i="0" aria-label="Enlarge photo: dining room"><img loading="lazy" decoding="async" width="900" height="900" src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=900&q=70" alt="Dining room with candles on the tables"><span>Dining room</span></button>
+      <button class="g-item" data-i="1" aria-label="Enlarge photo: steak"><img loading="lazy" decoding="async" width="600" height="600" src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=600&q=70" alt="Steak on a dark serving board"><span>Steak</span></button>
+      <button class="g-item" data-i="2" aria-label="Enlarge photo: plated course"><img loading="lazy" decoding="async" width="600" height="900" src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=600&q=70" alt="Plated main course"><span>Main course</span></button>
+      <button class="g-item" data-i="3" aria-label="Enlarge photo: interior"><img loading="lazy" decoding="async" width="600" height="600" src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=600&q=70" alt="Restaurant interior in warm light"><span>Interior</span></button>
+      <button class="g-item" data-i="4" aria-label="Enlarge photo: dessert"><img loading="lazy" decoding="async" width="900" height="450" src="https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=900&q=70" alt="Chocolate dessert"><span>Dessert</span></button>
+      <button class="g-item" data-i="5" aria-label="Enlarge photo: drinks"><img loading="lazy" decoding="async" width="900" height="450" src="https://images.unsplash.com/photo-1470337458703-46ad1756a187?auto=format&fit=crop&w=900&q=70" alt="Drinks with citrus garnish on a bar"><span>Drinks</span></button>
+    </div>
+  </div>
+</section>
+
+<!-- ================= RESERVATION ================= -->
+<section class="section reserve" id="reserve" aria-labelledby="reserve-title">
+  <div class="container reserve-grid">
+    <div class="reserve-intro reveal">
+      <p class="eyebrow">Reservations</p>
+      <h2 id="reserve-title">Book a <em>table</em></h2>
+      <p>Pick a date, a time and how many of you are coming. We confirm every booking on WhatsApp within 30 minutes.</p>
+      <p class="demo-banner"><strong>Demo only.</strong> This form does not send or save anything. After you submit it you can preview the WhatsApp message it would create.</p>
+    </div>
+
+    <form class="reserve-form reveal" id="reserveForm" novalidate>
+      <div class="field">
+        <label for="name">Full name</label>
+        <input type="text" id="name" name="name" autocomplete="name" required minlength="2" aria-describedby="name-err">
+        <span class="err" id="name-err" role="alert"></span>
+      </div>
+      <div class="field">
+        <label for="phone">Phone number</label>
+        <input type="tel" id="phone" name="phone" autocomplete="tel" inputmode="tel" placeholder="0300 1234567" required aria-describedby="phone-err">
+        <span class="err" id="phone-err" role="alert"></span>
+      </div>
+      <div class="field-row">
+        <div class="field">
+          <label for="date">Date</label>
+          <input type="date" id="date" name="date" required aria-describedby="date-err">
+          <span class="err" id="date-err" role="alert"></span>
+        </div>
+        <div class="field">
+          <label for="time">Time</label>
+          <select id="time" name="time" required aria-describedby="time-err">
+            <option value="">Select time</option>
+            <option>7:00 PM</option><option>7:30 PM</option><option>8:00 PM</option><option>8:30 PM</option>
+            <option>9:00 PM</option><option>9:30 PM</option><option>10:00 PM</option><option>10:30 PM</option>
+          </select>
+          <span class="err" id="time-err" role="alert"></span>
+        </div>
+      </div>
+      <div class="field">
+        <label for="guests">Number of guests</label>
+        <select id="guests" name="guests" required aria-describedby="guests-err">
+          <option value="">Select guests</option>
+          <option>1</option><option>2</option><option>3</option><option>4</option>
+          <option>5</option><option>6</option><option>7</option><option>8</option><option>9+</option>
+        </select>
+        <span class="err" id="guests-err" role="alert"></span>
+      </div>
+      <button type="submit" class="btn btn-accent btn-block">Send booking request</button>
+      <div class="form-success" id="formSuccess" role="status" aria-live="polite" hidden></div>
+    </form>
+  </div>
+</section>
+
+<!-- ================= LOCATION & CONTACT ================= -->
+<section class="section contact" id="contact" aria-labelledby="contact-title">
+  <div class="container contact-grid">
+    <div class="contact-info reveal">
+      <p class="eyebrow">Contact</p>
+      <h2 id="contact-title">Hours and <em>address</em></h2>
+      <p class="demo-banner">The address below is made up for this demo.</p>
+      <address>
+        <strong>NOIR Modern Dining</strong><br>
+        00 Sample Street, Phase 8,<br>
+        DHA, Karachi, Pakistan
+      </address>
+      <dl class="hours">
+        <div><dt>Monday to Thursday</dt><dd>6:00 PM to 12:00 AM</dd></div>
+        <div><dt>Friday and Saturday</dt><dd>6:00 PM to 1:00 AM</dd></div>
+        <div><dt>Sunday</dt><dd>5:00 PM to 11:30 PM</dd></div>
+      </dl>
+      <div class="contact-btns">
+        <a class="btn btn-accent" id="waBtn" href="#" target="_blank" rel="noopener">WhatsApp us</a>
+        <a class="btn btn-outline" id="callBtn" href="#">Call us</a>
+      </div>
+    </div>
+    <div class="map-wrap reveal">
+      <iframe title="Map of DHA Phase 8, Karachi (placeholder location for the demo)" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+        src="https://www.google.com/maps?q=DHA+Phase+8+Karachi&output=embed"></iframe>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <a href="#home" class="logo">NOIR<span>Modern Dining</span></a>
+      <p class="footer-tag">Dinner only. DHA Phase 8, Karachi.</p>
+    </div>
+    <nav aria-label="Footer navigation">
+      <h3>Pages</h3>
+      <ul>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#story">About</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#reserve">Book a table</a></li>
+      </ul>
+    </nav>
+    <div>
+      <h3>Contact</h3>
+      <ul>
+        <li>00 Sample Street, DHA Phase 8, Karachi</li>
+        <li><a id="footCall" href="#">Call us</a></li>
+        <li><a href="mailto:hello@noir-demo.example">hello@noir-demo.example</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3>Follow</h3>
+      <ul class="social">
+        <li><a href="#" aria-label="NOIR on Instagram (demo link)"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".6"/></svg></a></li>
+        <li><a href="#" aria-label="NOIR on Facebook (demo link)"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 8h3V4h-3a4 4 0 0 0-4 4v3H7v4h3v6h4v-6h3l1-4h-4V8z"/></svg></a></li>
+        <li><a id="footWa" href="#" target="_blank" rel="noopener" aria-label="NOIR on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 12a8 8 0 0 1-11.8 7L4 20l1.1-4A8 8 0 1 1 20 12z"/></svg></a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="container footer-base">
+    <span>© <span id="year">2026</span> NOIR Modern Dining. Fictional restaurant, made for a website demo.</span>
+  </div>
+</footer>
+
+<!-- ================= LIGHTBOX ================= -->
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer" hidden>
+  <button class="lb-btn lb-close" aria-label="Close image">&times;</button>
+  <button class="lb-btn lb-prev" aria-label="Previous image">&#8249;</button>
+  <figure><img id="lbImg" src="" alt=""><figcaption id="lbCap"></figcaption></figure>
+  <button class="lb-btn lb-next" aria-label="Next image">&#8250;</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
